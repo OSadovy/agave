@@ -1440,6 +1440,8 @@ pub fn main() {
             use_snapshot_archives_at_startup::cli::NAME,
             UseSnapshotArchivesAtStartup
         ),
+        skip_notify_account_restore_from_snapshot: matches
+            .is_present("skip_notify_account_restore_from_snapshot"),
         ..ValidatorConfig::default()
     };
 
